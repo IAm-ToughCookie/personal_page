@@ -210,6 +210,7 @@ header {
 .nav-open .hamburger::before {
     transform: rotate(90deg) translateX(-6px);
     background: var(--clr-accent);
+    width: 100%;
 }
 
 .nav-open .hamburger::after {
@@ -239,8 +240,15 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before {
+    top: 6px;
+    width: 1.75em;
+}
+
+.hamburger::after { 
+    bottom: 6px;
+    width: 2.25em;
+}
 
 
 /* Intro section */
